@@ -1,0 +1,25 @@
+<!-- list.html -->
+<!-- show.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Data</title>
+</head>
+<body>
+    <h1>Registration Data</h1>
+    <ul>
+        {% for data in registration_data_list %}
+            <li>
+                Name: {{ data.name }}<br>
+                Aadhar No: {{ data.aadhar_no }}<br>
+                Contact: {{ data.contact }}<br>
+                Address: {{ data.address }}<br>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+
